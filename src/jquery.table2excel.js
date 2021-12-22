@@ -26,6 +26,7 @@
 
     // The actual plugin constructor
     function Plugin ( element, options ) {
+            //element is not elephent or eleven
             this.element = element;
             // jQuery has an extend method which merges the contents of two or
             // more objects, storing the result in the first object. The first object
