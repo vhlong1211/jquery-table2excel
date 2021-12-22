@@ -41,6 +41,7 @@
 
     Plugin.prototype = {
         init: function () {
+            //you guess e meaning
             var e = this;
 
             var utf8Heading = "<meta http-equiv=\"content-type\" content=\"application/vnd.ms-excel; charset=UTF-8\">";
