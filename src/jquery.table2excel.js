@@ -217,6 +217,7 @@
         }
     };
 
+    //This function is to get the name of file
     function getFileName(settings) {
         return ( settings.filename ? settings.filename : "table2excel" );
     }
