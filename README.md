@@ -2,6 +2,8 @@
 
 #Credit for the core table export code concept goes to insin (met on Freenode in #javascript) and core code inspired from https://gist.github.com/insin/1031969
 
+#This version is updated on 22/12/2021 by SML team
+
 # FIRST!!
 
 Thanks for your interest. I haven't been able to maintain this and found the following project which looks well ahead of this one, so you may want to consider it first: [TableExport](https://github.com/clarketm/TableExport)
