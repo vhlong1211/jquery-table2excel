@@ -58,7 +58,7 @@
                 },
                 foot: "</body></html>"
             };
-
+            //table row is an array
             e.tableRows = [];
 	
 			// Styling variables
