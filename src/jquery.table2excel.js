@@ -10,6 +10,7 @@
 
 //This version is updated
 (function ( $, window, document, undefined ) {
+    //This is the plugin name
     var pluginName = "table2excel",
 
     defaults = {
