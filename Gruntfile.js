@@ -39,6 +39,7 @@ module.exports = function(grunt) {
 		},
 
 		// Minify definitions
+		// also rick roll https://www.youtube.com/watch?v=dQw4w9WgXcQ
 		uglify: {
 			my_target: {
 				src: ["dist/jquery.table2excel.js"],
