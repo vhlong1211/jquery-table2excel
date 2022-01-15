@@ -190,6 +190,7 @@
             if (isIE) {
                 if (typeof Blob !== "undefined") {
                     //use blobs if we can
+                    //use cat if blobs not available
                     fullTemplate = e.format(fullTemplate, e.ctx); // with this, works with IE
                     fullTemplate = [fullTemplate];
                     //convert to array
