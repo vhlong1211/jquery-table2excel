@@ -5,6 +5,8 @@
  *
  *  Made by rainabba
  *  Under MIT License
+ *  Hoang's first commit
+ * 
  */
 //table2excel.js
 
