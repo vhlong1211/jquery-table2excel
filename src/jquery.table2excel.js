@@ -88,7 +88,7 @@
 					// Create HTML for Row
                     tempRows += "<tr style='" + additionalStyles + "'>";
                     
-                    // Loop through each TH and TD
+                    // Loop through each TH and TD(table database)
                     $(p).find("td,th").not(e.settings.exclude).each(function (i,q) { // p did not exist, I corrected
 						
 						// Reset for this column
