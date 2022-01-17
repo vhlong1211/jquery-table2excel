@@ -73,7 +73,7 @@
             // get contents of table except for exclude
 			$(e.element).each(function (i, o) { //get text and background colors to preserve
                 var tempRows = "";
-                $(o).find("tr").not(e.settings.exclude).each(function (i,p) { 
+				$(o).find("tr").not(e.settings.exclude).each(function (i, p) { //Loop through each TR (A simple HTML table with three rows; one header row and two data rows)
 					
 					// Reset for this row
 					additionalStyles = "";
