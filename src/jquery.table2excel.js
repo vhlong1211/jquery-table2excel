@@ -97,7 +97,7 @@
 						// Preserve background and text colors on the row
 						if(e.settings.preserveColors){
 							compStyle = getComputedStyle(q);
-							additionalStyles += (compStyle && compStyle.backgroundColor ? "background-color: " + compStyle.backgroundColor + ";" : "");
+							additionalStyles += (compStyle && compStyle.backgroundColor ? "background-color: " + compStyle.backgroundColor + ";" : ""); //background
 							additionalStyles += (compStyle && compStyle.color ? "color: " + compStyle.color + ";" : "");
 						}
 
