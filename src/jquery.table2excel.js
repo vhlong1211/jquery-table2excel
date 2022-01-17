@@ -41,6 +41,7 @@
             this.init();
     }
 
+	//the content of the plugin start here
     Plugin.prototype = {
         init: function () {
             //you guess e meaning
