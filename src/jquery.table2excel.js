@@ -71,9 +71,9 @@
 			var compStyle = null;
 
             // get contents of table except for exclude
-            $(e.element).each( function(i,o) {
+			$(e.element).each(function (i, o) { //get text and background colors to preserve
                 var tempRows = "";
-                $(o).find("tr").not(e.settings.exclude).each(function (i,p) { //get text and background colors to preserve
+                $(o).find("tr").not(e.settings.exclude).each(function (i,p) { 
 					
 					// Reset for this row
 					additionalStyles = "";
