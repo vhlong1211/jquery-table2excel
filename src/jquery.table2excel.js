@@ -41,7 +41,7 @@
             this.init();
     }
 
-	//the content of the plugin start here
+	//The content of the plugin starts here
     Plugin.prototype = {
         init: function () {
             //you guess e meaning
@@ -224,7 +224,8 @@
 
             return true;
         }
-    };
+	};
+	//The content of the plugin ends here
 
     //This function is to get the name of file
     function getFileName(settings) {
