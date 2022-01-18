@@ -19,3 +19,4 @@ Features:
 	- Include td and th
 	- Update dev dependencies and CONTRIBUTING.md
 	- Cleanup repo tags/releases
+    - Fix a bug that keep rick roll user

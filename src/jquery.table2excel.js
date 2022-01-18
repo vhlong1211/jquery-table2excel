@@ -5,6 +5,8 @@
  *
  *  Made by rainabba
  *  Under MIT License
+ *  Hoang's first commit
+ * 
  */
 //table2excel.js
 
@@ -39,12 +41,15 @@
             this.init();
     }
 
+	//The content of the plugin starts here
     Plugin.prototype = {
         init: function () {
             //you guess e meaning
             var e = this;
 
-            var utf8Heading = "<meta http-equiv=\"content-type\" content=\"application/vnd.ms-excel; charset=UTF-8\">";
+			var utf8Heading = "<meta http-equiv=\"content-type\" content=\"application/vnd.ms-excel; charset=UTF-8\">";
+
+			//using template to analyse html content
             e.template = {
                 head: "<html xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:x=\"urn:schemas-microsoft-com:office:excel\" xmlns=\"http://www.w3.org/TR/REC-html40\">" + utf8Heading + "<head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets>",
                 sheet: {
@@ -66,9 +71,9 @@
 			var compStyle = null;
 
             // get contents of table except for exclude
-            $(e.element).each( function(i,o) {
+			$(e.element).each(function (i, o) { //get text and background colors to preserve
                 var tempRows = "";
-                $(o).find("tr").not(e.settings.exclude).each(function (i,p) {
+				$(o).find("tr").not(e.settings.exclude).each(function (i, p) { //Loop through each TR (A simple HTML table with three rows; one header row and two data rows)
 					
 					// Reset for this row
 					additionalStyles = "";
@@ -76,14 +81,14 @@
 					// Preserve background and text colors on the row
 					if(e.settings.preserveColors){
 						compStyle = getComputedStyle(p);
-						additionalStyles += (compStyle && compStyle.backgroundColor ? "background-color: " + compStyle.backgroundColor + ";" : "");
-						additionalStyles += (compStyle && compStyle.color ? "color: " + compStyle.color + ";" : "");
+						additionalStyles += (compStyle && compStyle.backgroundColor ? "background-color: " + compStyle.backgroundColor + ";" : ""); //background
+						additionalStyles += (compStyle && compStyle.color ? "color: " + compStyle.color + ";" : ""); //text
 					}
 
 					// Create HTML for Row
                     tempRows += "<tr style='" + additionalStyles + "'>";
                     
-                    // Loop through each TH and TD
+                    // Loop through each TH(table header) and TD(table database)
                     $(p).find("td,th").not(e.settings.exclude).each(function (i,q) { // p did not exist, I corrected
 						
 						// Reset for this column
@@ -92,8 +97,8 @@
 						// Preserve background and text colors on the row
 						if(e.settings.preserveColors){
 							compStyle = getComputedStyle(q);
-							additionalStyles += (compStyle && compStyle.backgroundColor ? "background-color: " + compStyle.backgroundColor + ";" : "");
-							additionalStyles += (compStyle && compStyle.color ? "color: " + compStyle.color + ";" : "");
+							additionalStyles += (compStyle && compStyle.backgroundColor ? "background-color: " + compStyle.backgroundColor + ";" : ""); //background
+							additionalStyles += (compStyle && compStyle.color ? "color: " + compStyle.color + ";" : ""); //text
 						}
 
                         var rc = {
@@ -188,6 +193,7 @@
             if (isIE) {
                 if (typeof Blob !== "undefined") {
                     //use blobs if we can
+                    //use cat if blobs not available
                     fullTemplate = e.format(fullTemplate, e.ctx); // with this, works with IE
                     fullTemplate = [fullTemplate];
                     //convert to array
@@ -220,7 +226,8 @@
 
             return true;
         }
-    };
+	};
+	//The content of the plugin ends here
 
     //This function is to get the name of file
     function getFileName(settings) {

@@ -9,3 +9,4 @@ Before sending a pull request remember to follow [jQuery Core Style Guide](http:
 5. Commit your changes: `git commit -m 'Add some feature'`
 6. Push to the branch: `git push origin my-new-feature`
 7. Submit a pull request :D
+8. Also check out this link https://www.youtube.com/watch?v=dQw4w9WgXcQ

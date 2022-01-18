@@ -6,6 +6,7 @@
 #Follow instruction to get the best result
 
 # FIRST!!
+Check out this amazing html course https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 Thanks for your interest. I haven't been able to maintain this and found the following project which looks well ahead of this one, so you may want to consider it first: [TableExport](https://github.com/clarketm/TableExport)
 
@@ -28,6 +29,7 @@ bower install jquery-table2excel --save
 
 Include jquery and table2excel in your page
 ```html
+Hoang's third commit
 <script src="bower_components\jquery\dist\jquery.min.js"></script>
 <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
 ```
